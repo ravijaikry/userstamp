@@ -5,10 +5,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>Module: Ddb::Userstamp::Stampable</title>
+  <title>Module: Userstamp::Controller</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   <meta http-equiv="Content-Script-Type" content="text/javascript" />
-  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
   <script type="text/javascript">
   // <![CDATA[
 
@@ -50,13 +50,13 @@
         <table class="header-table">
         <tr class="top-aligned-row">
           <td><strong>Module</strong></td>
-          <td class="class-name-in-header">Ddb::Userstamp::Stampable</td>
+          <td class="class-name-in-header">Userstamp::Controller</td>
         </tr>
         <tr class="top-aligned-row">
             <td><strong>In:</strong></td>
             <td>
-                <a href="../../../files/lib/stampable_rb.html">
-                lib/stampable.rb
+                <a href="../../files/lib/userstamp_rb.html">
+                lib/userstamp.rb
                 </a>
         <br />
             </td>
@@ -74,11 +74,15 @@
 
     <div id="description">
       <p>
-Extends the stamping functionality of ActiveRecord by automatically
-recording the model responsible for creating, updating, and deleting the
-current object. See the <a href="Stamper.html">Stamper</a> and <a
-href="../Userstamp.html">Userstamp</a> modules for further documentation on
-how the entire process works.
+The <a href="../Userstamp.html">Userstamp</a> module, when included into a
+controller, adds a before filter (named <tt>set_stamper</tt>) and an after
+filter (name <tt>reset_stamper</tt>). These methods assume a couple of
+things, but can be re-implemented in your controller to better suite your
+application.
+</p>
+<p>
+See the documentation for <tt>set_stamper</tt> and <tt>reset_stamper</tt>
+for specific implementation details.
 </p>
 
     </div>
@@ -91,22 +95,9 @@ how the entire process works.
 
 
     <!-- if includes -->
-    <div id="includes">
-      <h3 class="section-bar">Included Modules</h3>
-
-      <div id="includes-list">
-        <span class="include-name">InstanceMethods</span>
-      </div>
-    </div>
 
     <div id="section">
 
-    <div id="class-list">
-      <h3 class="section-bar">Classes and Modules</h3>
-
-      Module <a href="Stampable/ClassMethods.html" class="link">Ddb::Userstamp::Stampable::ClassMethods</a><br />
-
-    </div>
 
 
 

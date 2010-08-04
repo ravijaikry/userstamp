@@ -141,7 +141,7 @@ If you are upgrading your application from the old version of Userstamp, there i
 mode to have the plug-in use the old "_by" columns by default. To enable this mode, add the
 following line to the RAILS_ROOT/config/environment.rb file:
 
-  Ddb::Userstamp.compatibility_mode = true
+  Userstamp.compatibility_mode = true
   
 If you are having a difficult time getting the Userstamp plug-in to work, I recommend you checkout
 the sample application that I created. You can find this application on GitHub[http://github.com/delynn/userstamp_sample]

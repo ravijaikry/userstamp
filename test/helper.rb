@@ -40,7 +40,7 @@ ActionController::Routing::Routes.draw do |map|
 end
 
 def reset_to_defaults
-  Ddb::Userstamp.compatibility_mode = false
+  Userstamp.compatibility_mode = false
   create_test_models
 end
 

@@ -2,7 +2,7 @@ require 'test/helper'
 
 class CompatibilityStampingTests < Test::Unit::TestCase  # :nodoc:
   def setup
-    Ddb::Userstamp.compatibility_mode = true
+    Userstamp.compatibility_mode = true
     create_test_models
   end
 

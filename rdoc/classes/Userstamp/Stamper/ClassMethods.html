@@ -5,10 +5,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>Module: Ddb::Userstamp::Stamper::ClassMethods</title>
+  <title>Module: Userstamp::Stamper::ClassMethods</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   <meta http-equiv="Content-Script-Type" content="text/javascript" />
-  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
   <script type="text/javascript">
   // <![CDATA[
 
@@ -50,12 +50,12 @@
         <table class="header-table">
         <tr class="top-aligned-row">
           <td><strong>Module</strong></td>
-          <td class="class-name-in-header">Ddb::Userstamp::Stamper::ClassMethods</td>
+          <td class="class-name-in-header">Userstamp::Stamper::ClassMethods</td>
         </tr>
         <tr class="top-aligned-row">
             <td><strong>In:</strong></td>
             <td>
-                <a href="../../../../files/lib/stamper_rb.html">
+                <a href="../../../files/lib/stamper_rb.html">
                 lib/stamper.rb
                 </a>
         <br />
@@ -116,12 +116,12 @@
             onclick="toggleCode('M000001-source');return false;">[Source]</a></p>
           <div class="method-source-code" id="M000001-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/stamper.rb, line 9</span>
- 9:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">model_stamper</span>
-10:           <span class="ruby-comment cmt"># don't allow multiple calls</span>
-11:           <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">included_modules</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-constant">Ddb</span><span class="ruby-operator">::</span><span class="ruby-constant">Userstamp</span><span class="ruby-operator">::</span><span class="ruby-constant">Stamper</span><span class="ruby-operator">::</span><span class="ruby-constant">InstanceMethods</span>)
-12:           <span class="ruby-identifier">send</span>(<span class="ruby-identifier">:extend</span>, <span class="ruby-constant">Ddb</span><span class="ruby-operator">::</span><span class="ruby-constant">Userstamp</span><span class="ruby-operator">::</span><span class="ruby-constant">Stamper</span><span class="ruby-operator">::</span><span class="ruby-constant">InstanceMethods</span>)
-13:         <span class="ruby-keyword kw">end</span>
+    <span class="ruby-comment cmt"># File lib/stamper.rb, line 8</span>
+ 8:       <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">model_stamper</span>
+ 9:         <span class="ruby-comment cmt"># don't allow multiple calls</span>
+10:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">included_modules</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-constant">Userstamp</span><span class="ruby-operator">::</span><span class="ruby-constant">Stamper</span><span class="ruby-operator">::</span><span class="ruby-constant">InstanceMethods</span>)
+11:         <span class="ruby-identifier">send</span>(<span class="ruby-identifier">:extend</span>, <span class="ruby-constant">Userstamp</span><span class="ruby-operator">::</span><span class="ruby-constant">Stamper</span><span class="ruby-operator">::</span><span class="ruby-constant">InstanceMethods</span>)
+12:       <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>
