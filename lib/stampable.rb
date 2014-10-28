@@ -94,10 +94,10 @@ module Ddb #:nodoc:
             klass = "::#{stamper_class_name.to_s.singularize.camelize}"
 
             if defaults[:with_deleted]
-              belongs_to :author, :class_name => klass, :foreign_key => creator_attribute, :with_deleted => true
+              belongs_to :creator, :class_name => klass, :foreign_key => creator_attribute, :with_deleted => true
               belongs_to :updater, :class_name => klass, :foreign_key => updater_attribute, :with_deleted => true
             else
-              belongs_to :author, :class_name => klass, :foreign_key => creator_attribute
+              belongs_to :own_user, :class_name => klass, :foreign_key => creator_attribute
               belongs_to :updater, :class_name => klass, :foreign_key => updater_attribute
             end
 
