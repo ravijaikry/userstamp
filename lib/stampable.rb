@@ -78,7 +78,7 @@ module Ddb #:nodoc:
           compatability = Ddb::Userstamp.compatibility_mode
           defaults  = {
             :stamper_class_name => :user,
-            :creator_attribute  => (compatability ? :created_by : :creater_id),
+            :creator_attribute  => (compatability ? :created_by : :creator_id),
             :updater_attribute  => (compatability ? :updated_by : :updater_id),
             :deleter_attribute  => (compatability ? :deleted_by : :deleter_id),
             :deleter            => options.has_key?(:deleter_attribute),
@@ -94,10 +94,10 @@ module Ddb #:nodoc:
             klass = "::#{stamper_class_name.to_s.singularize.camelize}"
 
             if defaults[:with_deleted]
-              belongs_to :creater, :class_name => klass, :foreign_key => creator_attribute, :with_deleted => true
+              belongs_to :author, :class_name => klass, :foreign_key => creator_attribute, :with_deleted => true
               belongs_to :updater, :class_name => klass, :foreign_key => updater_attribute, :with_deleted => true
             else
-              belongs_to :creater, :class_name => klass, :foreign_key => creator_attribute
+              belongs_to :author, :class_name => klass, :foreign_key => creator_attribute
               belongs_to :updater, :class_name => klass, :foreign_key => updater_attribute
             end
 
